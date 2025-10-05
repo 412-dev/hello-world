@@ -1,92 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta name="author" content="Aleksandar" />
+    <meta
+      name="description"
+      content="This page contains all the things I am learning how to create as I learn HTML."
+    />
+    <meta charset="UTF-8" />
+    <title>My First Web Page</title>
+    <link rel="icon" href="html5.png" type="image/x-icon" />
+  </head>
 
-    <head>
-        <meta name="author" content="Aleksandar">
-        <meta name="description" content="This page contains all the things I am learning how to create as I learn HTML.">
-        <meta charset="UTF-8">
-        <title>My First Web Page</title>
-        <link rel="icon" href="html5.png" type="image/x-icon">
-    </head>
+  <body>
+    <header>
+      <h1>My Goals for the Year</h1>
 
-    <body>
-        <h1>My Goals for the Year</h1>
-
-    <hr>
-
-    <nav>
+      <nav aria-label="primary-navigation">
         <ul>
-            <li>
-                <a href="#html">Learning HTML</a>
-            </li>
-            <li>
-                <a href="#vacation">Planning a Vacation</a>
-            </li>
+          <li>
+            <a href="#html">Learning HTML</a>
+          </li>
+          <li>
+            <a href="#vacation">Planning a Vacation</a>
+          </li>
         </ul>
-    </nav>
+      </nav>
+    </header>
 
-    <hr>
+    <hr />
 
-      <section id="html">
+    <main>
+      <article id="html">
         <h2>I'm Ready to Learn HTML</h2>
         <p>This is my first web page.</p>
-        <img src="img/html_logo_300x300.png" alt="HTML5 Logo" title="I am Learning HTML5" width="300" height="300">
-        <figure>
+        <section>
+          <h3>HTML5</h3>
+          <img
+            src="img/html_logo_300x300.png"
+            alt="HTML5 Logo"
+            title="I am Learning HTML5"
+            width="300"
+            height="300"
+          />
+          <figure>
             <figcaption>
-                An example of HTML5 code
-                <p>
-                    <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
-                </p>
+              An example of HTML5 code
+              <p>
+                <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
+              </p>
             </figcaption>
-        </figure>
+          </figure>
+        </section>
 
-        <h3>My Daily Schedule</h3>
-        <p>Let me tell you how:</p>
-    <ol>
+        <section>
+          <h3>My Daily Schedule</h3>
+          <p>Let me tell you how:</p>
+          <ol>
             <li>...I learn more about web dev.</li>
             <li>...I plan out my schedule.</li>
-            <li>...I use resources from <abbr title="Mozilla Developer Network">
-                <a href="https://developer.mozilla.org/">MDN</a>
-            </abbr>.</li>
-    </ol>
-      </section>
+            <li>
+              ...I use resources from
+              <abbr title="Mozilla Developer Network">
+                <a href="https://developer.mozilla.org/">MDN</a> </abbr
+              >.
+            </li>
+          </ol>
+          <aside>
+            <details>
+              <summary>
+                Guess the <mark>number of hours</mark> I code per day
+              </summary>
+              <p>
+                I start at <time datetime="08:00">8 am</time> and I write code
+                for <time datetime="PT3H">3 hours</time> every morning.
+              </p>
+            </details>
+          </aside>
+          <br />
+          <table>
+            <caption>
+              My Daily Schedule
+            </caption>
+            <thead>
+              <tr>
+                <th>&nbsp;</th>
+                <th scope="col">Time</th>
+                <th scope="col">Activity</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Morning</th>
+                <td>
+                  <time datetime="08:00">8 am</time>-<time datetime="11:00"
+                    >11 am</time
+                  >
+                </td>
+                <td>Write Code</td>
+              </tr>
+              <tr>
+                <th scope="row">Break</th>
+                <td>
+                  <time datetime="11:00">11 am</time>-<time datetime="12:00"
+                    >12 pm</time
+                  >
+                </td>
+                <td>Eat Lunch</td>
+              </tr>
+              <tr>
+                <th scope="row">Afternoon</th>
+                <td>
+                  <time datetime="12:00">12 pm</time>-<time datetime="17:00"
+                    >5 pm</time
+                  >
+                </td>
+                <td>Study for Other Courses</td>
+              </tr>
+              <tr>
+                <th scope="row">Evening</th>
+                <td rowspan="2">All Other Times</td>
+                <td>Free Time</td>
+              </tr>
+              <tr>
+                <th scope="row">Night</th>
+                <td>Sleep</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="3">
+                  And that's what I do everyday, 5 days a week. Just eat, sleep,
+                  code... and recharge!
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+        </section>
+      </article>
 
-    <hr>
+      <hr />
 
-    <section id="vacation">
+      <article id="vacation">
         <h2>I Am Also Planning a Vacation</h2>
         <p>I've been working hard and <em>really need a getaway</em>.</p>
         <p>I want to visit Tokyo.</p>
 
-        <h3>Places I'd Like to Visit</h3>
-    <ul>
-        <li>
-            <p>I've heard good things about the Caribbean. </p>
-            <figure>
-        <img src="img/caribbean.jpg" alt="The Caribbean" width="400" height="225" loading="lazy">
-        <figcaption>
-            Caribbean Beach
-        </figcaption>
-        </figure>
-        </li>
-        <li><p>I've heard good things about going here:</p>
-        <address>
-            Kitayama, Fujinomiya<br>
-            Shizuoka 418-0112<br>
-            Japan<br>
-        </address>
-        <figure>
-        <img src="img/ai-generated-mt-fuji-mount-fuji-san-tallest-volcano-mountain-in-tokyo-japan-snow-capped-peak-conical-sacred-symbol-purple-orange-sunset-nature-landscape-backdrop-background-wallpaper-travel-photo.jpg" alt="Mt.Fuji" title="It is really beautiful" loading="lazy" width="400" height="200">
-        <figcaption>
-            Mt. Fuji
-        </figcaption>
-        </figure>
-        </li>
-    </ul>
+        <section>
+          <h3>Places I'd Like to Visit</h3>
+          <ul>
+            <li>
+              <p>I've heard good things about the Caribbean.</p>
+              <figure>
+                <img
+                  src="img/caribbean.jpg"
+                  alt="The Caribbean"
+                  width="400"
+                  height="225"
+                  loading="lazy"
+                />
+                <figcaption>Caribbean Beach</figcaption>
+              </figure>
+            </li>
+            <li>
+              <p>I've heard good things about going here:</p>
+              <address>
+                Kitayama, Fujinomiya<br />
+                Shizuoka 418-0112<br />
+                Japan<br />
+              </address>
+              <figure>
+                <img
+                  src="img/ai-generated-mt-fuji-mount-fuji-san-tallest-volcano-mountain-in-tokyo-japan-snow-capped-peak-conical-sacred-symbol-purple-orange-sunset-nature-landscape-backdrop-background-wallpaper-travel-photo.jpg"
+                  alt="Mt.Fuji"
+                  title="It is really beautiful"
+                  loading="lazy"
+                  width="400"
+                  height="200"
+                />
+                <figcaption>Mt. Fuji</figcaption>
+              </figure>
+            </li>
+          </ul>
+        </section>
 
         <!-- TODO: Add more places -->
-        <h3>Places I Want to Avoid</h3>
-        <dl>
+
+        <section>
+          <h3>Places I Want to Avoid</h3>
+          <dl>
             <dt>North Pole</dt>
             <dd>It is <strong>very cold</strong> there.</dd>
 
@@ -95,13 +196,17 @@
 
             <dt>Mountain Tops</dt>
             <dd>These are also cold.</dd>
-        </dl>
-    </section>
+          </dl>
+        </section>
+      </article>
+    </main>
 
-    <hr>
-        &lt;&lt;&lt;&copy; <a href="about.html">412-dev</a> &gt;&gt;&gt;
-        <p>
-            <a href="#">Back to Top</a>
-        </p>
-    </body>
+    <hr />
+    <footer>
+      <p>&lt;&lt;&lt;&copy; <a href="about.html">412-dev</a> &gt;&gt;&gt;</p>
+      <p>
+        <a href="#">Back to Top</a>
+      </p>
+    </footer>
+  </body>
 </html>
